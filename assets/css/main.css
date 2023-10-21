@@ -2273,7 +2273,7 @@ input, select, textarea {
 	}
 
 	.icon-label {
-		font-size: 4px; /* Adjust the font size as needed */
+		font-size: 10px; /* Adjust the font size as needed */
 		display: block;
 		text-align: center;
 		line-height: 4.5; /* Increase the line-height value to lower the text */
