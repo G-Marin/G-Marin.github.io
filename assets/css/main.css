@@ -2260,25 +2260,29 @@ input, select, textarea {
 		margin-bottom: 10px;
 	}
 	
-
 	ul.medium-icons {
 		list-style: none;
 		padding-left: 0;
+		font-size:40px;
 		text-align: center; /* Center horizontally */
 	}
 	
 	ul.medium-icons li {
 		display: inline-block;
-		vertical-align: middle; /* Center vertically */
-		padding: 20px 1em 10px; /* Adjust as needed for spacing */
-		font-size: 40px;
+		text-align: center;
+	}
+
+	.icon-label {
+		font-size: 10px; /* Adjust the font size as needed */
+		display: block;
+		text-align: center;
+		line-height: 4.5; /* Increase the line-height value to lower the text */
 	}
 	
-	/* Additional space above the icon */
-	ul.medium-icons li .icon:before {
-		margin-top: 10px; /* Adjust as needed for spacing */
-		margin-bottom: 10px;
-	}
+	
+	
+	
+	
 
 
 		
