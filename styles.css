@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    padding: 10px 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.name {
+    background-image: url('./images/background.png');
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.name h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    margin: 0;
+    padding-top: 15vh; 
+    padding-bottom: 15vh; 
+}
+
+.section:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 150px; /* Adjust the height as needed */
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+
+
+.card {
+    transition: transform 0.2s;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-text {
+    flex-grow: 1;
+}
+
+.image img{
+    width:20%;
+    height:20%;
+    border-radius: 20%;
+}
+
+#projects {
+    background-image: url('./images/plain.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#timeline {
+    background-image: url('./images/plain.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#organizations {
+    background-image: url('./images/plain.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#toolkit {
+    background-image: url('./images/plain.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#contact {
+    background-image: url('./images/plain.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#toolkit .img-fluid {
+    max-width: 60px;
+    margin-bottom: 10px;
+}
+
+#contact .form-control {
+    border-radius: 0;
+}
+
+#contact .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 0;
+    padding: 10px 20px;
+}
+
+#contact .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #ddd;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline-event-left {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timeline-event-right{
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    left:50%; 
+}
+
+
+
+.timeline-date {
+    padding: 5px 0;
+    color: #FF9F55;
+    font-weight: bold;
+}
+
+.timeline-content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+.timeline-title {
+    margin: 0;
+    color: #333;
+}
+
+.timeline-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .timeline::after {
+        left: 31px;
+    }
+    
+    .timeline-event {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    .timeline-event::after {
+        left: 60px;
+    }
+    
+    .timeline-event:nth-child(even) {
+        left: 0%;
+    }
+}
