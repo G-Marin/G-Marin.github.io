@@ -164,20 +164,25 @@ h2 {
     margin-bottom: 10px;
 }
 
-#contact .form-control {
-    border-radius: 0;
+.contact {
+    text-align: center;
+    margin: 20px 0;
 }
-
-#contact .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    border-radius: 0;
-    padding: 10px 20px;
+#contact .logo img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
 }
-
-#contact .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #004085;
+#contact a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+#contacta:hover {
+    color: #007bff;
 }
 
 
